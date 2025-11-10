@@ -1,0 +1,191 @@
+Create and deploy a Solidity smart contract that stores and displays student data on a blockchain test network using Remix IDE.
+
+
+---
+
+🧠 Concept
+
+You’ll write a smart contract that:
+
+Defines a structure (struct) for student data
+
+Allows adding new student details
+
+Lets anyone view the stored student data
+
+(Optionally) allows multiple students to be stored using an array or mapping
+
+
+
+---
+
+🖥️ Step-by-Step Procedure
+
+Step 1: Open Remix IDE
+
+Visit 👉 https://remix.ethereum.org
+
+Create a new workspace or use the default one.
+
+Inside the contracts folder, create a new file called Student.sol.
+
+
+
+---
+
+Step 2: Write the Smart Contract Code
+
+Paste the following Solidity code:
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.8;
+
+contract StudentData {
+    
+    struct Student {
+        uint256 rollNo;
+        string name;
+        string department;
+        uint256 marks;
+    }
+
+    Student public student;
+
+    // Function to set student details
+    function setStudentData(uint256 _rollNo, string memory _name, string memory _department, uint256 _marks) public {
+        student = Student(_rollNo, _name, _department, _marks);
+    }
+
+    // Function to get student details
+    function getStudentData() public view returns (uint256, string memory, string memory, uint256) {
+        return (student.rollNo, student.name, student.department, student.marks);
+    }
+}
+
+
+---
+
+Step 3: Compile the Contract
+
+1. Click on the Solidity Compiler icon (⚙️).
+
+
+2. Choose version 0.8.8.
+
+
+3. Click Compile Student.sol.
+
+
+4. Ensure no syntax errors appear.
+
+
+
+
+---
+
+Step 4: Deploy the Contract
+
+1. Go to the Deploy & Run Transactions tab (💠 icon).
+
+
+2. Set Environment to:
+
+Remix VM (London) for local testing, or
+
+Injected Provider - MetaMask for deploying to a test network (like Sepolia).
+
+
+
+3. Click Deploy.
+
+
+4. Confirm the transaction in MetaMask (if using a test network).
+
+
+
+
+---
+
+Step 5: Interact with the Contract
+
+After deployment, expand the Deployed Contracts section.
+
+You’ll see:
+
+setStudentData
+
+getStudentData
+
+student (auto getter for public variable)
+
+
+Now:
+
+1. In setStudentData, enter:
+
+101, "Tanushka", "Computer", 89
+
+Then click transact.
+
+
+2. Once done, click getStudentData → it should return the same values you entered.
+
+
+
+
+---
+
+Optional Enhancement (for multiple students)
+
+If you want to store many students instead of just one, use an array or mapping:
+
+pragma solidity ^0.8.8;
+
+contract StudentRecords {
+    struct Student {
+        uint256 rollNo;
+        string name;
+        string department;
+        uint256 marks;
+    }
+
+    Student[] public students;
+
+    function addStudent(uint256 _rollNo, string memory _name, string memory _department, uint256 _marks) public {
+        students.push(Student(_rollNo, _name, _department, _marks));
+    }
+
+    function getStudent(uint256 index) public view returns (uint256, string memory, string memory, uint256) {
+        Student memory s = students[index];
+        return (s.rollNo, s.name, s.department, s.marks);
+    }
+}
+
+
+---
+
+Step 6: View Transactions & Gas Values
+
+The video likely shows how to view:
+
+Transaction cost and Gas used after each transaction.
+
+This info appears in Remix under the terminal panel after you execute a function.
+
+
+
+---
+
+✅ Output
+
+After completion:
+
+You can store and retrieve student details using blockchain transactions.
+
+Every change is recorded on-chain and viewable on Remix or Etherscan (if deployed to a testnet).
+
+
+
+---
+
+Would you like me to extend this to Assignment 4 (if the next one in the playlist) or also explain how to check gas cost and transaction hash in Remix like shown in the video?
