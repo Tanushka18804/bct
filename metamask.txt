@@ -1,0 +1,165 @@
+Objective:
+To install and set up the MetaMask wallet, which is a crypto wallet and gateway to blockchain applications like Ethereum-based DApps.
+
+
+---
+
+⚙️ Step-by-Step Procedure:
+
+Step 1: Open the MetaMask Website
+
+1. Go to your browser (preferably Google Chrome).
+
+
+2. Visit the official site:
+🔗 https://metamask.io/
+
+
+
+
+---
+
+Step 2: Add MetaMask Extension to Browser
+
+1. Click on the “Download” button.
+
+
+2. Choose “Install MetaMask for Chrome” — it will take you to the Chrome Web Store.
+
+
+3. Click “Add to Chrome” → “Add Extension”.
+
+
+4. After installation, the MetaMask fox icon 🦊 will appear at the top-right corner of your browser.
+
+
+
+
+---
+
+Step 3: Launch MetaMask
+
+1. Click the fox icon to open MetaMask.
+
+
+2. You will see two options:
+
+Create a New Wallet
+
+Import Wallet (if you already have one)
+Choose Create a New Wallet.
+
+
+
+
+
+---
+
+Step 4: Create Wallet
+
+1. Accept the terms and conditions.
+
+
+2. Set a strong password (at least 8 characters).
+
+
+3. Click Create to continue.
+
+
+
+
+---
+
+Step 5: Secure Your Wallet – Secret Recovery Phrase
+
+1. MetaMask will display a 12-word Secret Recovery Phrase (very important 🔒).
+
+
+2. Write it down carefully on paper and store it safely (do NOT share it online).
+
+
+3. You’ll be asked to confirm the recovery phrase by selecting the words in the correct order.
+
+
+
+
+---
+
+Step 6: Wallet Dashboard
+
+Once setup is complete, you’ll see your wallet interface showing:
+
+Account Name (e.g., Account 1)
+
+Ethereum Mainnet as the default network
+
+Wallet Balance ($0 initially)
+
+Buttons for Buy, Send, Swap, and Receive
+
+
+
+---
+
+Step 7: Add Test Network (Optional but often required for SPPU practical)
+
+1. Click the network dropdown at the top (where it says “Ethereum Mainnet”).
+
+
+2. Click “Show/hide test networks”.
+
+
+3. Enable “Sepolia test network” or “Goerli test network.”
+
+
+4. Now you can switch to that network for experimenting with test Ether.
+
+
+
+
+---
+
+Step 8: Verify Installation
+
+Check that your MetaMask wallet address (starts with 0x...) is visible.
+
+You can copy it using the Copy icon.
+
+This confirms your wallet is successfully installed and functional.
+
+
+
+---
+
+📸 Output (for assignment submission):
+
+For your practical file or report, take screenshots of the following:
+
+1. MetaMask installation page (Chrome Web Store).
+
+
+2. “Welcome to MetaMask” setup screen.
+
+
+3. Recovery phrase page (without showing the actual words).
+
+
+4. Wallet dashboard with your account address visible.
+
+
+5. Network dropdown showing “Ethereum Mainnet”.
+
+
+
+
+---
+
+🧠 Conclusion:
+
+You have successfully installed and configured MetaMask Wallet, which acts as a secure interface for interacting with blockchain networks and decentralized applications (DApps).
+
+
+---
+
+If you want, I can also make a ready-made report (in doc or pdf) for this “Assignment 1: Installation of MetaMask” — including objective, theory, procedure, output, and conclusion — just like the college practical format.
+Would you like me to prepare that?
